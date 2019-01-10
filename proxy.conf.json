@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "target": "https://is1qc679h7.execute-api.us-east-2.amazonaws.com",
+    "secure": true,
+    "pathRewrite": {"^/api" : ""}
+  }
+}

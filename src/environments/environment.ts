@@ -2,10 +2,24 @@ export const environment = {
   production: false,
   amplify: {
     Auth: {
-      identityPoolId: 'ap-northeast-1:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
-      region: 'ap-northeast-1',
-      userPoolId: 'ap-northeast-1_xxxxxxxxx',
-      userPoolWebClientId: 'xxxxxxxxxxxxxxxxxxxxxxxxx'
+      mandatorySignIn: true,
+      identityPoolId: 'us-east-2:deb53e57-bb3c-466d-bf1a-8cb0a2a61089',
+      region: 'us-east-2',
+      userPoolId: 'us-east-2_v1qCZC8u5',
+      userPoolWebClientId: '39f3ea0k04rudl4eusuieoi5b2'
+    },
+    API: {
+      endpoints: [
+        {
+          name: 'PetStore',
+          endpoint: 'https://d35hfdk5h51mf3.cloudfront.net',
+          // endpoint: 'https://is1qc679h7.execute-api.us-east-2.amazonaws.com',
+          service_info: {
+            service: 'execute-api',
+            region: 'us-east-2'
+          }
+        }
+      ]
     }
   }
 };
